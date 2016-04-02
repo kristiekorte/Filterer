@@ -12,10 +12,14 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var image: WKInterfaceImage!
+    
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
+        //animateWithDuration(0.4, animations: <#T##() -> Void#>)
     }
 
     override func willActivate() {
@@ -27,5 +31,28 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+   
+    @IBAction func onRedFilter() {
+        NSLog("Touched Red Button")
 
+    }
+    @IBAction func onBlueFilter() {
+        NSLog("Touched Blue Button")
+    }
+    @IBAction func onGreenFilter() {
+        NSLog("Touched Blue Button")
+    }
+    
+    @IBAction func onYellowFilter() {
+        NSLog("Touched Yellow Button")
+
+    }
+    @IBAction func onPurpleFilter() {
+        NSLog("Touched Purple Button")
+    }
+
+    @IBAction func onEditButton() {
+        NSLog("Touched Edit Button")
+
+    }
 }

@@ -1,15 +1,95 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FilterWatch" customModuleProvider="target">
+                    <items>
+                        <imageView height="71" alignment="left" id="Zae-t3-XaG"/>
+                        <separator alignment="left" id="bai-dX-k2c"/>
+                        <button width="1" alignment="left" title="New Photo" id="Wks-p8-Ayu"/>
+                        <separator alignment="left" id="c6R-a8-ojK"/>
+                        <group width="1" alignment="left" layout="vertical" spacing="2" id="10Z-Fn-muB">
+                            <items>
+                                <group width="1" alignment="left" spacing="2" id="KX5-Xj-p7j">
+                                    <items>
+                                        <button width="0.33000000000000002" alignment="left" id="WkG-Ui-YEM" userLabel="Red">
+                                            <color key="titleColor" red="0.97953344669999998" green="0.97829060219999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="1" green="0.1622113432" blue="0.22158678479999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="onRedFilter" destination="AgC-eL-Hgc" id="84a-9m-e43"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" alignment="left" id="SoV-Qp-CP7" userLabel="Blue">
+                                            <color key="titleColor" red="0.97953344669999998" green="0.97829060219999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="onBlueFilter" destination="AgC-eL-Hgc" id="iRQ-rs-wRM"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" alignment="left" id="1oj-wN-toN" userLabel="Green">
+                                            <color key="titleColor" red="0.97953344669999998" green="0.97829060219999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.55294117649999996" green="0.79215686269999996" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="onGreenFilter" destination="AgC-eL-Hgc" id="fH1-Ww-c8Z"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" spacing="2" id="wrW-te-h3U">
+                                    <items>
+                                        <button width="0.33000000000000002" alignment="left" id="9YS-rm-bui" userLabel="Yellow">
+                                            <color key="titleColor" red="0.97953344669999998" green="0.97829060219999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="1" green="0.96285687688068566" blue="0.16837791040051786" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="onYellowFilter" destination="AgC-eL-Hgc" id="3gf-jW-4g3"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" alignment="left" id="5Rl-cZ-Zgu" userLabel="Purple">
+                                            <color key="titleColor" red="0.97953344669999998" green="0.97829060219999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.50123085030957792" green="0.11430412880472662" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="onPurpleFilter" destination="AgC-eL-Hgc" id="zpc-ne-jUa"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" alignment="left" title="Edit" id="5g1-GC-1K5">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.97953344669999998" green="0.97829060219999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="onEditButton" destination="AgC-eL-Hgc" id="Df0-qb-MJW"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="YDl-gX-DYw"/>
+                        <switch width="1" alignment="left" value="YES" title="Filter" id="ZPY-8V-3FW"/>
+                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="y3v-dN-PTl"/>
+                        <picker height="100" alignment="left" id="ZPV-Ih-mlz"/>
+                        <label width="132.5" alignment="left" text="Label" id="BbO-jg-1tt"/>
+                        <dateLabel alignment="left" id="ehH-qP-833">
+                            <dateFormatterStyle key="dateStyle" short="YES"/>
+                            <dateFormatterStyle key="timeStyle" short="YES"/>
+                        </dateLabel>
+                    </items>
+                    <menu key="menu" id="lKM-aM-KPr">
+                        <items>
+                            <menuItem title="Menu Item" icon="accept" id="bwR-HQ-dXl"/>
+                            <menuItem title="Menu Item" icon="decline" id="Kg6-lL-EeY"/>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="image" destination="Zae-t3-XaG" id="4XM-HB-FBD"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="195" y="238.25"/>
         </scene>
     </scenes>
 </document>

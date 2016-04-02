@@ -10,9 +10,13 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FilterWatch" customModuleProvider="target">
                     <items>
-                        <imageView height="71" alignment="left" id="Zae-t3-XaG"/>
+                        <imageView width="136" height="71" alignment="left" image="scenery" contentMode="scaleAspectFit" id="Zae-t3-XaG"/>
                         <separator alignment="left" id="bai-dX-k2c"/>
-                        <button width="1" alignment="left" title="New Photo" id="Wks-p8-Ayu"/>
+                        <button width="1" alignment="left" title="New Photo" id="Wks-p8-Ayu">
+                            <connections>
+                                <action selector="onNewPhoto" destination="AgC-eL-Hgc" id="2q9-eI-4Db"/>
+                            </connections>
+                        </button>
                         <separator alignment="left" id="c6R-a8-ojK"/>
                         <group width="1" alignment="left" layout="vertical" spacing="2" id="10Z-Fn-muB">
                             <items>
@@ -71,7 +75,6 @@
                         <separator alignment="left" id="YDl-gX-DYw"/>
                         <switch width="1" alignment="left" value="YES" title="Filter" id="ZPY-8V-3FW"/>
                         <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="y3v-dN-PTl"/>
-                        <picker height="100" alignment="left" id="ZPV-Ih-mlz"/>
                         <label width="132.5" alignment="left" text="Label" id="BbO-jg-1tt"/>
                         <dateLabel alignment="left" id="ehH-qP-833">
                             <dateFormatterStyle key="dateStyle" short="YES"/>
@@ -89,7 +92,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="195" y="238.25"/>
+            <point key="canvasLocation" x="249" y="126.5"/>
         </scene>
     </scenes>
 </document>

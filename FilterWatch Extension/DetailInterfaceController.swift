@@ -25,7 +25,9 @@ class DetailInterfaceController: WKInterfaceController {
         if let contextDictionary = context as? Dictionary<String, String> {
             
             if let selectedName =  contextDictionary["selectedName"] {
-                nameLabel.setText("You selected the row for \(selectedName)")
+                //nameLabel.setText("\(selectedName)")
+                nameLabel.setText("Choose a Color")
+
                 if let picture = UIImage(named: selectedName) {
                     image.setImage(picture)
                 }
@@ -45,4 +47,32 @@ class DetailInterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func dored() {
+    image.setTintColor(UIColor.redColor())
+        
+    }
+
+    @IBAction func doOrange() {
+        image.setTintColor(UIColor.orangeColor())
+
+    }
+    
+    @IBAction func doYellow() {
+        image.setTintColor(UIColor.yellowColor())
+
+    }
+    @IBAction func doGreen() {
+        image.setTintColor(UIColor.greenColor())
+
+    }
+   
+    @IBAction func doBlue() {
+        image.setTintColor(UIColor.blueColor())
+
+    }
+    
+    @IBAction func doPurple() {
+        image.setTintColor(UIColor.purpleColor())
+
+    }
 }

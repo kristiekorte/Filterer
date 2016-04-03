@@ -104,14 +104,16 @@
                                 <tableRow identifier="TopRow" selectable="NO" id="sCe-NJ-Yt9" userLabel="Top Row controller" customClass="TopRowController" customModule="FilterWatch_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="VCb-Av-Tbr">
                                         <items>
-                                            <label alignment="center" verticalAlignment="center" text="Images" textAlignment="center" id="7gV-Ng-ZgO"/>
+                                            <label alignment="center" verticalAlignment="center" text="Icons" textAlignment="center" id="7gV-Ng-ZgO"/>
                                         </items>
                                     </group>
                                 </tableRow>
                                 <tableRow identifier="ImageRow" id="W2J-a9-Bxc" userLabel="Image Row controller" customClass="ImageRowController" customModule="FilterWatch_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="42A-Wt-DN2">
                                         <items>
-                                            <imageView width="50" height="50" alignment="center" id="urR-be-R4H" userLabel="Row Image"/>
+                                            <imageView width="50" height="50" alignment="center" id="urR-be-R4H" userLabel="Row Image">
+                                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </imageView>
                                         </items>
                                     </group>
                                     <connections>
@@ -134,20 +136,78 @@
             <objects>
                 <controller id="06l-Nd-kpn" customClass="DetailInterfaceController" customModule="FilterWatch_Extension">
                     <items>
-                        <group width="1" height="91.5" alignment="left" layout="vertical" id="gPg-qN-ZVu">
+                        <group width="1" height="163.5" alignment="left" layout="vertical" id="gPg-qN-ZVu">
                             <items>
-                                <label alignment="left" text="Label" numberOfLines="0" id="uiO-40-kKJ"/>
-                                <imageView alignment="left" id="dMe-Qc-kGn"/>
+                                <label alignment="center" text="Text Goes Here" textAlignment="center" numberOfLines="0" id="uiO-40-kKJ">
+                                    <color key="textColor" red="0.97953344669999998" green="0.97829060219999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                                <imageView width="50" height="50" alignment="center" contentMode="scaleAspectFit" id="dMe-Qc-kGn">
+                                    <color key="tintColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
+                                <group width="1" height="93" alignment="left" layout="vertical" spacing="2" id="c3U-Qj-gbD">
+                                    <items>
+                                        <group width="1" alignment="left" spacing="2" id="6Re-Mm-erd">
+                                            <items>
+                                                <button width="0.33000000000000002" alignment="left" id="zbI-ga-NHx" userLabel="red">
+                                                    <color key="titleColor" red="0.97953344669999998" green="0.97829060219999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="1" green="0.1622113432" blue="0.22158678479999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="dored" destination="06l-Nd-kpn" id="PR3-8K-rxP"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="0.33000000000000002" alignment="left" id="Y6K-hU-Kfd" userLabel="orange">
+                                                    <color key="titleColor" red="0.97953344669999998" green="0.97829060219999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="1" green="0.44107008969811168" blue="0.044336153546578494" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="doOrange" destination="06l-Nd-kpn" id="57t-WL-BGe"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="0.33000000000000002" alignment="left" id="v04-S9-48s" userLabel="yellow">
+                                                    <color key="titleColor" red="0.97953344669999998" green="0.97829060219999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="1" green="0.90478366965097179" blue="0.0063862556585208008" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="doYellow" destination="06l-Nd-kpn" id="Enc-jq-Yvq"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="1" alignment="left" spacing="2" id="HG3-Yj-BfA">
+                                            <items>
+                                                <button width="0.33000000000000002" alignment="left" id="Es9-Vq-9zP" userLabel="green">
+                                                    <color key="titleColor" red="0.97953344669999998" green="0.97829060219999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.012220574545333318" green="1" blue="0.13256279999069542" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="doGreen" destination="06l-Nd-kpn" id="obc-HF-fDf"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="0.33000000000000002" alignment="left" id="U24-xE-csU" userLabel="blue">
+                                                    <color key="titleColor" red="0.97953344669999998" green="0.97829060219999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.069671678129038739" green="0.2570357494760549" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="doBlue" destination="06l-Nd-kpn" id="jN8-jd-li1"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="0.33000000000000002" alignment="left" id="OHZ-sV-9ao" userLabel="purple">
+                                                    <color key="backgroundColor" red="0.32013000033519068" green="0.036394669992444006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="doPurple" destination="06l-Nd-kpn" id="8CT-fb-jdx"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
                             </items>
                         </group>
                     </items>
                     <connections>
+                        <outlet property="doRed" destination="zbI-ga-NHx" id="fFE-64-5IX"/>
                         <outlet property="image" destination="dMe-Qc-kGn" id="N81-YP-mqc"/>
                         <outlet property="nameLabel" destination="uiO-40-kKJ" id="AwQ-LL-9eg"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-120" y="309"/>
+            <point key="canvasLocation" x="-120" y="315.25"/>
         </scene>
     </scenes>
 </document>

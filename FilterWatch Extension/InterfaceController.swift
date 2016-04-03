@@ -36,10 +36,16 @@ class InterfaceController: WKInterfaceController {
     }
     
     func setupData() {
-        dataArray.append("Bob")
-        dataArray.append("Felix")
-        dataArray.append("Jim")
-        dataArray.append("Fred")
+        dataArray.append("action")
+        dataArray.append("avatar")
+        dataArray.append("contact")
+        dataArray.append("dashboard")
+        dataArray.append("home")
+        dataArray.append("logout")
+        dataArray.append("news")
+        dataArray.append("prospector")
+        dataArray.append("shop")
+
     }
     
     func updateTable() {

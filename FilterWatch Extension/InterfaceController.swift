@@ -46,6 +46,7 @@ class InterfaceController: WKInterfaceController {
         dataArray.append("prospector")
         dataArray.append("shop")
 
+
     }
     
     func updateTable() {

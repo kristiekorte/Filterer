@@ -141,9 +141,13 @@
                                 <label alignment="center" text="Text Goes Here" textAlignment="center" numberOfLines="0" id="uiO-40-kKJ">
                                     <color key="textColor" red="0.97953344669999998" green="0.97829060219999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </label>
-                                <imageView width="50" height="50" alignment="center" contentMode="scaleAspectFit" id="dMe-Qc-kGn">
-                                    <color key="tintColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
-                                </imageView>
+                                <group width="1" alignment="left" id="AwL-zt-qGl">
+                                    <items>
+                                        <imageView width="50" height="50" alignment="center" contentMode="scaleAspectFit" id="dMe-Qc-kGn">
+                                            <color key="tintColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </imageView>
+                                    </items>
+                                </group>
                                 <group width="1" height="93" alignment="left" layout="vertical" spacing="2" id="c3U-Qj-gbD">
                                     <items>
                                         <group width="1" alignment="left" spacing="2" id="6Re-Mm-erd">
@@ -199,15 +203,40 @@
                                 </group>
                             </items>
                         </group>
+                        <button width="1" alignment="left" title="End" id="UUR-LF-tc3">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="5u6-R9-pos" kind="push" id="wQB-Ck-19r"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
-                        <outlet property="doRed" destination="zbI-ga-NHx" id="fFE-64-5IX"/>
                         <outlet property="image" destination="dMe-Qc-kGn" id="N81-YP-mqc"/>
                         <outlet property="nameLabel" destination="uiO-40-kKJ" id="AwQ-LL-9eg"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-120" y="315.25"/>
+        </scene>
+        <!--End-->
+        <scene sceneID="fDp-B4-bj3">
+            <objects>
+                <controller identifier="endScene" title="End" id="5u6-R9-pos" customClass="EndSceneInterfaceController" customModule="FilterWatch_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="vwA-n1-Sml">
+                            <items>
+                                <imageView alignment="center" image="Emoji" contentMode="scaleAspectFit" animationDuration="3" id="ncM-9i-xQU"/>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="image" destination="ncM-9i-xQU" id="Yzv-Ev-kQB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="103" y="290"/>
         </scene>
     </scenes>
 </document>

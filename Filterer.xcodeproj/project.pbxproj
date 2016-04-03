@@ -18,6 +18,7 @@
 		130FB5B31CB0A9B7006EE9C5 /* ImageRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130FB5AC1CB0A9B7006EE9C5 /* ImageRowController.swift */; };
 		130FB5B41CB0A9B7006EE9C5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 130FB5AD1CB0A9B7006EE9C5 /* Info.plist */; };
 		130FB5B61CB0A9B7006EE9C5 /* TopRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130FB5AF1CB0A9B7006EE9C5 /* TopRowController.swift */; };
+		1381DFBC1CB0F40A00339D65 /* EndSceneInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381DFBB1CB0F40A00339D65 /* EndSceneInterfaceController.swift */; };
 		13F9D2841C7EC68600203404 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F9D2831C7EC68600203404 /* ImageProcessor.swift */; };
 		4DC199981BB201E100AA75E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC199971BB201E100AA75E7 /* AppDelegate.swift */; };
 		4DC1999A1BB201E100AA75E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC199991BB201E100AA75E7 /* ViewController.swift */; };
@@ -82,6 +83,7 @@
 		130FB5AC1CB0A9B7006EE9C5 /* ImageRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRowController.swift; sourceTree = "<group>"; };
 		130FB5AD1CB0A9B7006EE9C5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		130FB5AF1CB0A9B7006EE9C5 /* TopRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopRowController.swift; sourceTree = "<group>"; };
+		1381DFBB1CB0F40A00339D65 /* EndSceneInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndSceneInterfaceController.swift; sourceTree = "<group>"; };
 		13F9D2831C7EC68600203404 /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
 		4DC199941BB201E100AA75E7 /* Filterer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Filterer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC199971BB201E100AA75E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				130FB5AD1CB0A9B7006EE9C5 /* Info.plist */,
 				130FB5AC1CB0A9B7006EE9C5 /* ImageRowController.swift */,
 				130FB5AF1CB0A9B7006EE9C5 /* TopRowController.swift */,
+				1381DFBB1CB0F40A00339D65 /* EndSceneInterfaceController.swift */,
 			);
 			path = "FilterWatch Extension";
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1381DFBC1CB0F40A00339D65 /* EndSceneInterfaceController.swift in Sources */,
 				130FB5B11CB0A9B7006EE9C5 /* DetailInterfaceController.swift in Sources */,
 				130FB5B21CB0A9B7006EE9C5 /* ExtensionDelegate.swift in Sources */,
 				130FB5B31CB0A9B7006EE9C5 /* ImageRowController.swift in Sources */,

@@ -92,7 +92,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="249" y="126.5"/>
+            <point key="canvasLocation" x="369" y="100.5"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="fus-H3-sdC">
@@ -148,7 +148,7 @@
                                         </imageView>
                                     </items>
                                 </group>
-                                <group width="1" height="93" alignment="left" layout="vertical" spacing="2" id="c3U-Qj-gbD">
+                                <group width="1" height="88" alignment="left" layout="vertical" spacing="2" id="c3U-Qj-gbD">
                                     <items>
                                         <group width="1" alignment="left" spacing="2" id="6Re-Mm-erd">
                                             <items>
@@ -203,7 +203,7 @@
                                 </group>
                             </items>
                         </group>
-                        <button width="1" alignment="left" title="End" id="UUR-LF-tc3">
+                        <button width="50" height="30" alignment="center" title="End" id="UUR-LF-tc3">
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="5u6-R9-pos" kind="push" id="wQB-Ck-19r"/>
@@ -225,7 +225,7 @@
                     <items>
                         <group width="1" alignment="left" id="vwA-n1-Sml">
                             <items>
-                                <imageView alignment="center" image="Emoji" contentMode="scaleAspectFit" animationDuration="3" id="ncM-9i-xQU"/>
+                                <imageView alignment="center" image="image3" contentMode="scaleAspectFit" animationDuration="3" id="ncM-9i-xQU"/>
                             </items>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </group>

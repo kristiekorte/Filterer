@@ -33,7 +33,6 @@ class DetailInterfaceController: WKInterfaceController {
                 }
             }
             
-            
         }
     }
 
@@ -48,7 +47,7 @@ class DetailInterfaceController: WKInterfaceController {
     }
 
     @IBAction func dored() {
-    image.setTintColor(UIColor.redColor())
+        image.setTintColor(UIColor.redColor())
         
     }
 

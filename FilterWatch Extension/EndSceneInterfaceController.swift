@@ -22,9 +22,13 @@ class EndSceneInterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        if let picture = UIImage(named: "image3") {
-            image.setImage(picture)
+        animateWithDuration(2.4) {
+            if let picture = UIImage(named: "image3") {
+                self.image.setImage(picture)
+                
+            }
         }
+
     }
 
     override func didDeactivate() {

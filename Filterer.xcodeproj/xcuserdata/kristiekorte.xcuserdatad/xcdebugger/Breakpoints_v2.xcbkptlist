@@ -9,22 +9,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FilterWatch Extension/DetailInterfaceController.swift"
-            timestampString = "481340703.481007"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "awakeWithContext(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "FilterWatch Extension/InterfaceController.swift"
             timestampString = "481341524.708187"
             startingColumnNumber = "9223372036854775807"
@@ -48,6 +32,22 @@
             startingLineNumber = "91"
             endingLineNumber = "91"
             landmarkName = "table(_:didSelectRowAtIndex:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FilterWatch Extension/DetailInterfaceController.swift"
+            timestampString = "481345089.877371"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "awakeWithContext(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

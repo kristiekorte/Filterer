@@ -134,9 +134,15 @@
             <objects>
                 <controller id="06l-Nd-kpn" customClass="DetailInterfaceController" customModule="FilterWatch_Extension">
                     <items>
-                        <label alignment="left" text="Label" numberOfLines="0" id="uiO-40-kKJ"/>
+                        <group width="1" height="91.5" alignment="left" layout="vertical" id="gPg-qN-ZVu">
+                            <items>
+                                <label alignment="left" text="Label" numberOfLines="0" id="uiO-40-kKJ"/>
+                                <imageView alignment="left" id="dMe-Qc-kGn"/>
+                            </items>
+                        </group>
                     </items>
                     <connections>
+                        <outlet property="image" destination="dMe-Qc-kGn" id="N81-YP-mqc"/>
                         <outlet property="nameLabel" destination="uiO-40-kKJ" id="AwQ-LL-9eg"/>
                     </connections>
                 </controller>

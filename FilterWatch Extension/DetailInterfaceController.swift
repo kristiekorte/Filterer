@@ -13,6 +13,8 @@ import Foundation
 class DetailInterfaceController: WKInterfaceController {
     
     @IBOutlet var nameLabel: WKInterfaceLabel!
+    @IBOutlet var image : WKInterfaceImage!
+    
 
 
     override func awakeWithContext(context: AnyObject?) {
@@ -24,7 +26,11 @@ class DetailInterfaceController: WKInterfaceController {
             
             if let selectedName =  contextDictionary["selectedName"] {
                 nameLabel.setText("You selected the row for \(selectedName)")
+                if let picture = UIImage(named: selectedName) {
+                    image.setImage(picture)
+                }
             }
+            
             
         }
     }

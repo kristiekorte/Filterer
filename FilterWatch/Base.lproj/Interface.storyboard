@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VdC-Kj-TSk">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Image Detaill Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FilterWatch" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="ImageDetaillInterfaceController" customModule="FilterWatch_Extension">
                     <items>
                         <imageView width="136" height="71" alignment="left" image="scenery" contentMode="scaleAspectFit" id="Zae-t3-XaG"/>
                         <separator alignment="left" id="bai-dX-k2c"/>
@@ -93,6 +93,55 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="249" y="126.5"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="fus-H3-sdC">
+            <objects>
+                <controller id="VdC-Kj-TSk" customClass="InterfaceController" customModule="FilterWatch_Extension">
+                    <items>
+                        <table alignment="left" id="QrP-jR-T7M">
+                            <items>
+                                <tableRow identifier="TopRow" selectable="NO" id="sCe-NJ-Yt9" userLabel="Top Row controller" customClass="TopRowController" customModule="FilterWatch_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="VCb-Av-Tbr">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Images" textAlignment="center" id="7gV-Ng-ZgO"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                                <tableRow identifier="ImageRow" id="W2J-a9-Bxc" userLabel="Image Row controller" customClass="ImageRowController" customModule="FilterWatch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="42A-Wt-DN2">
+                                        <items>
+                                            <imageView width="50" height="50" alignment="center" id="urR-be-R4H" userLabel="Row Image"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowImage" destination="urR-be-R4H" id="gyY-TH-Wcj"/>
+                                        <segue destination="06l-Nd-kpn" kind="push" identifier="PushDetailScreenSegue" id="cWr-xn-4ov"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="watchTable" destination="QrP-jR-T7M" id="jI8-L1-Ukk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-120" y="-2.25"/>
+        </scene>
+        <!--Detail Interface Controller-->
+        <scene sceneID="dhf-zB-NM1">
+            <objects>
+                <controller id="06l-Nd-kpn" customClass="DetailInterfaceController" customModule="FilterWatch_Extension">
+                    <items>
+                        <label alignment="left" text="Label" numberOfLines="0" id="uiO-40-kKJ"/>
+                    </items>
+                    <connections>
+                        <outlet property="nameLabel" destination="uiO-40-kKJ" id="AwQ-LL-9eg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-120" y="309"/>
         </scene>
     </scenes>
 </document>

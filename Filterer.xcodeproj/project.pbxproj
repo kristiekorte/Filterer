@@ -11,9 +11,13 @@
 		130FB5831CB03DC4006EE9C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130FB5821CB03DC4006EE9C5 /* Assets.xcassets */; };
 		130FB58A1CB03DC4006EE9C5 /* FilterWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 130FB5891CB03DC4006EE9C5 /* FilterWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		130FB58F1CB03DC4006EE9C5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130FB58E1CB03DC4006EE9C5 /* InterfaceController.swift */; };
-		130FB5911CB03DC4006EE9C5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130FB5901CB03DC4006EE9C5 /* ExtensionDelegate.swift */; };
-		130FB5931CB03DC4006EE9C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130FB5921CB03DC4006EE9C5 /* Assets.xcassets */; };
 		130FB5971CB03DC4006EE9C5 /* FilterWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 130FB57D1CB03DC4006EE9C5 /* FilterWatch.app */; };
+		130FB5B01CB0A9B7006EE9C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130FB5A91CB0A9B7006EE9C5 /* Assets.xcassets */; };
+		130FB5B11CB0A9B7006EE9C5 /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130FB5AA1CB0A9B7006EE9C5 /* DetailInterfaceController.swift */; };
+		130FB5B21CB0A9B7006EE9C5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130FB5AB1CB0A9B7006EE9C5 /* ExtensionDelegate.swift */; };
+		130FB5B31CB0A9B7006EE9C5 /* ImageRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130FB5AC1CB0A9B7006EE9C5 /* ImageRowController.swift */; };
+		130FB5B41CB0A9B7006EE9C5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 130FB5AD1CB0A9B7006EE9C5 /* Info.plist */; };
+		130FB5B61CB0A9B7006EE9C5 /* TopRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130FB5AF1CB0A9B7006EE9C5 /* TopRowController.swift */; };
 		13F9D2841C7EC68600203404 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F9D2831C7EC68600203404 /* ImageProcessor.swift */; };
 		4DC199981BB201E100AA75E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC199971BB201E100AA75E7 /* AppDelegate.swift */; };
 		4DC1999A1BB201E100AA75E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC199991BB201E100AA75E7 /* ViewController.swift */; };
@@ -72,9 +76,12 @@
 		130FB5841CB03DC4006EE9C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		130FB5891CB03DC4006EE9C5 /* FilterWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FilterWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		130FB58E1CB03DC4006EE9C5 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		130FB5901CB03DC4006EE9C5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		130FB5921CB03DC4006EE9C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		130FB5941CB03DC4006EE9C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		130FB5A91CB0A9B7006EE9C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		130FB5AA1CB0A9B7006EE9C5 /* DetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
+		130FB5AB1CB0A9B7006EE9C5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		130FB5AC1CB0A9B7006EE9C5 /* ImageRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRowController.swift; sourceTree = "<group>"; };
+		130FB5AD1CB0A9B7006EE9C5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		130FB5AF1CB0A9B7006EE9C5 /* TopRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopRowController.swift; sourceTree = "<group>"; };
 		13F9D2831C7EC68600203404 /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
 		4DC199941BB201E100AA75E7 /* Filterer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Filterer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC199971BB201E100AA75E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,9 +125,12 @@
 			isa = PBXGroup;
 			children = (
 				130FB58E1CB03DC4006EE9C5 /* InterfaceController.swift */,
-				130FB5901CB03DC4006EE9C5 /* ExtensionDelegate.swift */,
-				130FB5921CB03DC4006EE9C5 /* Assets.xcassets */,
-				130FB5941CB03DC4006EE9C5 /* Info.plist */,
+				130FB5AA1CB0A9B7006EE9C5 /* DetailInterfaceController.swift */,
+				130FB5AB1CB0A9B7006EE9C5 /* ExtensionDelegate.swift */,
+				130FB5A91CB0A9B7006EE9C5 /* Assets.xcassets */,
+				130FB5AD1CB0A9B7006EE9C5 /* Info.plist */,
+				130FB5AC1CB0A9B7006EE9C5 /* ImageRowController.swift */,
+				130FB5AF1CB0A9B7006EE9C5 /* TopRowController.swift */,
 			);
 			path = "FilterWatch Extension";
 			sourceTree = "<group>";
@@ -271,7 +281,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				130FB5931CB03DC4006EE9C5 /* Assets.xcassets in Resources */,
+				130FB5B01CB0A9B7006EE9C5 /* Assets.xcassets in Resources */,
+				130FB5B41CB0A9B7006EE9C5 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +303,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				130FB5911CB03DC4006EE9C5 /* ExtensionDelegate.swift in Sources */,
+				130FB5B11CB0A9B7006EE9C5 /* DetailInterfaceController.swift in Sources */,
+				130FB5B21CB0A9B7006EE9C5 /* ExtensionDelegate.swift in Sources */,
+				130FB5B31CB0A9B7006EE9C5 /* ImageRowController.swift in Sources */,
+				130FB5B61CB0A9B7006EE9C5 /* TopRowController.swift in Sources */,
 				130FB58F1CB03DC4006EE9C5 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,6 +556,7 @@
 				130FB59A1CB03DC4006EE9C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		130FB59C1CB03DC4006EE9C5 /* Build configuration list for PBXNativeTarget "FilterWatch" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +565,7 @@
 				130FB59E1CB03DC4006EE9C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DC1998F1BB201E100AA75E7 /* Build configuration list for PBXProject "Filterer" */ = {
 			isa = XCConfigurationList;

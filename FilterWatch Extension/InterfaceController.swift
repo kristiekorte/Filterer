@@ -8,19 +8,20 @@
 
 import WatchKit
 import Foundation
-import UIKit
+
 
 
 class InterfaceController: WKInterfaceController {
-
-    @IBOutlet var image: WKInterfaceImage!
     
+    @IBOutlet var watchTable: WKInterfaceTable!
+    var dataArray = [String]()
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
-        //animateWithDuration(0.4, animations: <#T##() -> Void#>)
+        setupData()
+        updateTable()
     }
 
     override func willActivate() {
@@ -33,34 +34,74 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-   
-    @IBAction func onNewPhoto() {
-        
-    }
-
-        
     
-    @IBAction func onRedFilter() {
-        NSLog("Touched Red Button")
-        
-    }
-    @IBAction func onBlueFilter() {
-        NSLog("Touched Blue Button")
-    }
-    @IBAction func onGreenFilter() {
-        NSLog("Touched Blue Button")
+    func setupData() {
+        dataArray.append("Bob")
+        dataArray.append("Felix")
+        dataArray.append("Jim")
+        dataArray.append("Fred")
     }
     
-    @IBAction func onYellowFilter() {
-        NSLog("Touched Yellow Button")
-
+    func updateTable() {
+        
+        // Create array to hold the row types
+        var rowTypes = [String]()
+        
+        // Add header row as the row 0
+        rowTypes.append("TopRow")
+        
+        // Add a contact row for each object in the dataArray
+        for _ in dataArray {
+            rowTypes.append("ImageRow")
+        }
+        
+        // Configure the table to display the rows as defined in the rowsArray
+        watchTable.setRowTypes(rowTypes)
+        
+        // Retrieve each contact row and set the contents from the dataArray
+        // Start at row 1, because row 0 is the header row
+        for index in 0..<dataArray.count {
+            
+            let imageRow = watchTable.rowControllerAtIndex(index+1) as! ImageRowController
+            
+            let rowContent = dataArray[index]
+            
+            
+            if let image = UIImage(named: rowContent) {
+                imageRow.rowImage.setImage(image)
+            }
+            
+        }
+        
+        let imageCount = dataArray.count
+        
+        
     }
-    @IBAction func onPurpleFilter() {
-        NSLog("Touched Purple Button")
+    override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
+        
+        table.setRowTypes(["HeaderCell", "DataCell", "DataCell", "FooterCell"])
+        
+        for index in 0..<dataArray.count {
+            let imageRow = watchTable.rowControllerAtIndex(index+1) as! ImageRowController
+        }
+        
+        //let selectedRow = watchTable.rowControllerAtIndex(rowIndex) as! ImageRowController
+        
+        
+        let contextDictionary = ["selectedName" : self.dataArray[rowIndex - 1]]
+        
+        self.pushControllerWithName("DetailInterface", context: contextDictionary)
+    }
+    
+    override func contextForSegueWithIdentifier(segueIdentifier: String, inTable table: WKInterfaceTable, rowIndex: Int) -> AnyObject? {
+        
+        if segueIdentifier == "PushDetailScreenSegue" {
+            return ["selectedName" : dataArray[rowIndex - 1]]
+        }
+        
+        return nil
+        
     }
 
-    @IBAction func onEditButton() {
-        NSLog("Touched Edit Button")
-
+    
     }
-}
